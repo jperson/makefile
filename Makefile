@@ -7,9 +7,9 @@ OBJDIR 	= obj
 BINDIR 	= bin
 
 SRCS 	= $(notdir $(wildcard $(SRCDIR)/*.cpp))
-OBJS 	= $(patsubst %.cpp, $(OBJDIR)/%.o, $(notdir $(wildcard $(SRCDIR)/*.cpp)))
+OBJS 	= $(patsubst %.cpp, $(OBJDIR)/%.o, $(SRCS))
 
-TARGET = 
+TARGET = foo
 
 all: $(TARGET)
 
