@@ -14,11 +14,11 @@ TARGET = foo
 all: $(TARGET)
 
 $(TARGET): $(OBJS)
-    $(CC) $(CCFLAGS) $(OBJS) -o $(BINDIR)/$@ $(LIBS)
+	$(CC) $(CCFLAGS) $(OBJS) -o $(BINDIR)/$@ $(LIBS)
 
 $(OBJDIR)/%.o: $(SRCDIR)/%.cpp
-    $(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $@ $<
 
 clean:
-    rm -f $(BINDIR)/*
-    rm -f $(OBJDIR)/*
+	rm -f $(BINDIR)/*
+	rm -f $(OBJDIR)/*
