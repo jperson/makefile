@@ -1,13 +1,13 @@
-CC 		= gcc
-CFLAGS 	= -Wall
-LIBS 	= 
+CC      = gcc
+CFLAGS  = -Wall
+LIBS    = 
 
-SRCDIR 	= src
-OBJDIR 	= obj
-BINDIR 	= bin
+SRCDIR = src
+OBJDIR = obj
+BINDIR = bin
 
-SRCS 	= $(notdir $(wildcard $(SRCDIR)/*.cpp))
-OBJS 	= $(patsubst %.cpp, $(OBJDIR)/%.o, $(SRCS))
+SRCS = $(notdir $(wildcard $(SRCDIR)/*.cpp))
+OBJS = $(patsubst %.cpp, $(OBJDIR)/%.o, $(SRCS))
 
 TARGET = foo
 
