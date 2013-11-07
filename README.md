@@ -1,0 +1,4 @@
+makefile
+========
+
+Empty makefile starter
